@@ -45,8 +45,6 @@
 				y: img.height() / option.largeheight
 			}
 			
-			console.log(ratio);
-			
 			// 定义一些尺寸
 			var size = 
 			{
