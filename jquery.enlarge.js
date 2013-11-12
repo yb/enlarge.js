@@ -1,5 +1,5 @@
 /*
-	Enlarge for jQuery v1.0
+	Enlarge for jQuery v1.1
 	Abel Yao, 2013
 	http://www.abelcode.com/
 */
@@ -107,10 +107,14 @@
 				width: self.innerWidth() - shade.outerWidth(),
 				height: self.innerHeight() - shade.outerHeight()
 			}
+            
+            // 对象坐标
+			var offset = self.offset();
 			
 			// 显示效果
 			var show = function()
 			{
+                offset = self.offset();
 				shade.show();
 				if(option.fade) layer.stop().fadeIn(300);
 				else layer.show();
@@ -124,7 +128,6 @@
 			}
 			
 			// 绑定鼠标事件
-			var offset = self.offset();
 			self.mousemove(function(e)
 			{
 				// 鼠标位置
