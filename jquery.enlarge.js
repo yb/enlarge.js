@@ -1,5 +1,5 @@
 /*
-    enlarge.js v1.1
+    jquery.enlarge.js v1.1
     by AbelYao, USKY.ORG
 */
 
